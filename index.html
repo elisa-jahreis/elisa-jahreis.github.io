@@ -1,21 +1,622 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Elisa Jahreis — marine scientist working across coral reef ecology, marine research operations and emerging geospatial analysis.">
-<title>Elisa Jahreis | Marine Science & Geospatial Portfolio</title>
-<style>
-:root{--navy:#0b2633;--deep:#103b4b;--teal:#22b5ac;--ink:#17303b;--muted:#526975;--line:#dce7e9;--paper:#f6faf9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.7 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:#fff}a{color:inherit}a:focus-visible{outline:3px solid var(--teal);outline-offset:4px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:var(--navy);color:white;position:sticky;top:0;z-index:2}nav{display:flex;justify-content:space-between;align-items:center;gap:18px;min-height:70px}.brand{font-weight:750;letter-spacing:.06em;text-decoration:none}nav .links{display:flex;gap:23px;flex-wrap:wrap}nav .links a{text-decoration:none;font-size:.89rem}nav a:hover{color:#62e0d8}.hero{background:linear-gradient(115deg,#092733 5%,#125065 100%);color:#fff;padding:110px 0 115px}.eyebrow{color:#65ded7;text-transform:uppercase;letter-spacing:.19em;font-size:.78rem;font-weight:800}.hero h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.12;letter-spacing:-.045em;max-width:870px;margin:25px 0}.hero p{max-width:740px;font-size:1.16rem;color:#d5e9ed}.btn{display:inline-block;margin-top:20px;background:var(--teal);color:#082c36;text-decoration:none;padding:12px 20px;border-radius:5px;font-weight:750}.btn:hover{background:#68e0d7}section{padding:76px 0;scroll-margin-top:75px}section.alt{background:var(--paper)}h2{font-size:clamp(1.8rem,3vw,2.5rem);letter-spacing:-.03em;margin:0 0 20px}h3{font-size:1.16rem;line-height:1.35;margin:12px 0}p{margin:0 0 18px}.intro{max-width:850px;font-size:1.07rem;color:#435c67}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:30px}.card{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#fff}.cardbody{padding:22px}.visual{min-height:165px;background:linear-gradient(145deg,#153e51,#287d83);display:flex;align-items:center;justify-content:center;padding:24px;color:#dbf5f2;text-align:center;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase}.visual.sand{background:linear-gradient(140deg,#35616c,#9db8ae)}.visual.deep{background:linear-gradient(140deg,#122e46,#24597c)}.tag{display:inline-block;background:#e7f7f5;color:#176c68;border-radius:20px;padding:3px 11px;font-size:.76rem;font-weight:700}.small{font-size:.91rem;color:var(--muted)}.experience{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}.experience article{border-left:3px solid var(--teal);padding:5px 0 7px 19px}.experience h3{margin:0 0 6px}.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.skills span{border:1px solid #c6dfe0;border-radius:30px;padding:7px 14px;font-size:.88rem}.note{margin-top:20px;font-size:.9rem;color:var(--muted)}.contact{background:var(--navy);color:#fff}.contact p{color:#d1e4e8}.contact a{color:#79e1d9}footer{background:#071b25;color:#b4c9cf;padding:23px 0;font-size:.84rem}@media(max-width:760px){nav{align-items:flex-start;flex-direction:column;padding:16px 0}.hero{padding:76px 0}.grid,.experience{grid-template-columns:1fr}section{padding:56px 0}nav .links{gap:14px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Elisa Jahreis — Marine Scientist, Coral Reef Researcher and Geospatial Analysis.">
+  <title>Elisa Jahreis | Marine Science & Geospatial Analysis</title>
+
+  <style>
+    :root {
+      --navy: #0b2434;
+      --deep: #102f41;
+      --teal: #32c5b4;
+      --light: #f3f8f9;
+      --white: #ffffff;
+      --text: #263b47;
+      --muted: #607481;
+      --border: #dce7eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--white);
+    }
+
+    a { color: #087f83; }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 22px 0;
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+    }
+
+    .nav-links a {
+      color: #d5e8ed;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover { color: var(--teal); }
+
+    .hero {
+      background: linear-gradient(135deg, #0b2434, #17485b);
+      color: white;
+      padding: 105px 0 115px;
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 65px);
+      line-height: 1.14;
+      max-width: 850px;
+      margin: 22px 0;
+      letter-spacing: -1.5px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 18px;
+      color: #c8dce3;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--navy);
+      padding: 13px 23px;
+      margin-top: 22px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    section { padding: 85px 0; }
+
+    section:nth-of-type(even) {
+      background: var(--light);
+    }
+
+    .section-label {
+      color: #087f83;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: clamp(29px, 4vw, 39px);
+      line-height: 1.25;
+      margin: 12px 0 25px;
+    }
+
+    .intro {
+      max-width: 850px;
+      font-size: 17px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 35px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.035);
+    }
+
+    .card h3 {
+      color: var(--navy);
+      font-size: 21px;
+      margin: 5px 0 8px;
+      line-height: 1.4;
+    }
+
+    .card p {
+      margin: 12px 0;
+    }
+
+    .meta {
+      font-size: 13px;
+      font-weight: bold;
+      color: #087f83;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .role {
+      font-weight: bold;
+      color: #415867;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e5f5f3;
+      color: #176f71;
+      padding: 5px 10px;
+      margin: 6px 5px 0 0;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    .note {
+      border-left: 3px solid var(--teal);
+      padding-left: 20px;
+      margin-top: 28px;
+      color: var(--muted);
+    }
+
+    .contact {
+      background: var(--navy);
+      color: white;
+    }
+
+    .contact h2 { color: white; }
+
+    .contact p { color: #c8dce3; }
+
+    .contact a { color: var(--teal); }
+
+    footer {
+      background: #071a26;
+      color: #a9c0c9;
+      text-align: center;
+      padding: 25px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 75px 0; }
+      section { padding: 60px 0; }
+      .card { padding: 23px; }
+    }
+  </style>
 </head>
+
 <body>
-<header><nav class="wrap"><a class="brand" href="#top">ELISA JAHREIS</a><div class="links"><a href="#about">About</a><a href="#research">Research</a><a href="#projects">GIS Projects</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a></div></nav></header>
-<main id="top">
-<div class="hero"><div class="wrap"><div class="eyebrow">Marine science · Coral reef ecology · Geospatial analysis</div><h1>Marine science, from field research to spatial insight.</h1><p>I'm Elisa Jahreis, a marine scientist with experience in coral reef research, marine field operations and scientific coordination. I'm developing geospatial approaches to support marine conservation and environmental decision-making.</p><a class="btn" href="#projects">Explore my work</a></div></div>
-<section id="about"><div class="wrap"><div class="eyebrow">Background</div><h2>About me</h2><p class="intro">I hold an M.Sc. in Marine Ecosystems and Fisheries Sciences from the University of Hamburg. My work spans coral reef ecology, experimental marine research, field operations and research coordination.</p><p class="intro">My research includes investigating coral thermal tolerance and bleaching responses in Fiji. Most recently, I worked as a Research Coordinator at the Bamfield Marine Sciences Centre in Canada, supporting visiting researchers, marine field operations and scientific infrastructure.</p><p class="intro">I am now building skills in Geographic Information Systems (GIS), remote sensing and marine spatial planning to connect ecological evidence with spatial analysis and conservation applications.</p></div></section>
-<section id="research" class="alt"><div class="wrap"><div class="eyebrow">Selected experience</div><h2>Research & field experience</h2><div class="experience"><article><h3>Coral thermal tolerance research · Fiji</h3><p>Graduate research on coral responses to heat stress, combining reef fieldwork, sampling and experimental approaches including CBASS.</p><div class="small">Coral physiology · Reef ecology · Experimental research</div></article><article><h3>Research Coordinator · Bamfield Marine Sciences Centre</h3><p>Coordinated research visits and supported marine field operations, laboratories, scientific equipment and daily research-station activities.</p><div class="small">Research operations · Marine field logistics · Scientific coordination</div></article><article><h3>Marine research · Hereon</h3><p>Contributed to marine research involving ocean ecology, imaging and data analysis, including ship-based field experience.</p><div class="small">Marine observations · Data analysis · Field research</div></article><article><h3>Additional marine research & outreach</h3><p>Experience across marine research settings and public-facing environmental education, including work associated with GEOMAR and Schutzstation Wattenmeer.</p><div class="small">Marine science · Environmental communication</div></article></div><p class="note">Detailed project descriptions, dates, publications and field photographs will be added as they are prepared for publication.</p></div></section>
-<section id="projects"><div class="wrap"><div class="eyebrow">Developing portfolio</div><h2>Geospatial projects</h2><p class="intro">A growing collection of reproducible marine GIS and remote-sensing case studies. Projects below are planned or in development; no analytical results are claimed yet.</p><div class="grid"><article class="card"><div class="visual">Fiji reef mapping<br>Image / map to come</div><div class="cardbody"><span class="tag">In development</span><h3>Coral Reef Environmental Exposure Mapping</h3><p>Votua, Fiji: exploring habitat patterns and environmental exposure using open geospatial datasets.</p><div class="small">QGIS · Reef habitats · Satellite data</div></div></article><article class="card"><div class="visual sand">Spatial planning<br>Map to come</div><div class="cardbody"><span class="tag">Planned</span><h3>Marine Protected Area Prioritization</h3><p>A spatial decision-support case study integrating ecological value and human-use considerations.</p><div class="small">Marine spatial planning · Multi-criteria analysis</div></div></article><article class="card"><div class="visual deep">Fishing activity<br>Map to come</div><div class="cardbody"><span class="tag">Planned</span><h3>Fishing Pressure & Marine Biodiversity</h3><p>Investigating spatial overlap between fishing activity and conservation-relevant marine areas.</p><div class="small">Fisheries · Spatial analysis · Conservation</div></div></article></div></div></section>
-<section id="expertise" class="alt"><div class="wrap"><div class="eyebrow">Experience & developing skills</div><h2>Expertise</h2><p class="intro">Established experience in marine ecology, experimental research and research operations, complemented by ongoing training in geospatial methods.</p><div class="skills"><span>Coral reef ecology</span><span>Coral thermal tolerance & CBASS</span><span>Marine fieldwork</span><span>Research coordination</span><span>Scientific data analysis</span><span>Marine research operations</span><span>GIS (learning)</span><span>Remote sensing (learning)</span><span>Marine spatial planning (learning)</span></div></div></section>
-<section id="contact" class="contact"><div class="wrap"><div class="eyebrow">Connect</div><h2>Contact & collaboration</h2><p>Interested in marine research, geospatial conservation or project collaboration? You can explore my work on GitHub. Additional professional contact details and a downloadable CV will be added here.</p><p><a href="https://github.com/elisa-jahreis" target="_blank" rel="noopener noreferrer">GitHub · elisa-jahreis</a></p></div></section>
-</main><footer><div class="wrap">© 2026 Elisa Jahreis · Marine Science & Geospatial Portfolio</div></footer>
-</body></html>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">ELISA JAHREIS</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="container">
+    <div class="eyebrow">
+      Marine Science · Coral Reef Ecology · Geospatial Analysis
+    </div>
+
+    <h1>
+      Marine science, from field research to spatial insight.
+    </h1>
+
+    <p>
+      I am a marine scientist with experience in coral reef
+      ecology, experimental marine research, scientific field
+      operations, and research coordination. I am expanding
+      my expertise in GIS and remote sensing to support
+      evidence-based marine conservation and environmental
+      decision-making.
+    </p>
+
+    <a class="button" href="#research">
+      Explore My Work
+    </a>
+  </div>
+</div>
+
+<main>
+
+<section id="about">
+  <div class="container">
+    <div class="section-label">01 / About</div>
+    <h2>About Me</h2>
+
+    <div class="intro">
+      <p>
+        I am Elisa Jahreis, a marine scientist with an M.Sc.
+        in Marine Ecosystem and Fisheries Sciences from the
+        University of Hamburg, Germany.
+      </p>
+
+      <p>
+        My scientific background combines tropical coral reef
+        ecology, coral thermal tolerance experiments, marine
+        fieldwork, and environmental data analysis. During my
+        master's research in Fiji, I investigated coral
+        responses to thermal stress using the Coral Bleaching
+        Automated Stress System (CBASS), alongside field-based
+        reef research.
+      </p>
+
+      <p>
+        My professional experience spans tropical reef
+        environments, European marine research institutions,
+        and a remote marine research station on Canada's
+        Pacific coast. Most recently, I worked as a Research
+        Coordinator at the Bamfield Marine Sciences Centre,
+        supporting researchers, field operations, laboratory
+        infrastructure, and scientific logistics.
+      </p>
+
+      <p>
+        I am particularly interested in connecting field
+        observations and experimental ecology with spatial
+        environmental data. My current professional development
+        focuses on GIS, satellite remote sensing, and their
+        applications in coral reef monitoring, marine habitat
+        assessment, and conservation planning.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="container">
+    <div class="section-label">02 / Experience</div>
+    <h2>Research & Field Experience</h2>
+
+    <p class="intro">
+      My experience covers experimental coral research,
+      marine ecology, scientific field operations, research
+      coordination, and environmental education across
+      tropical and temperate marine ecosystems.
+    </p>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="meta">Canada · 2026</div>
+        <h3>Bamfield Marine Sciences Centre</h3>
+        <div class="role">Research Coordinator</div>
+
+        <p>
+          Coordinated research logistics and supported visiting
+          scientists at a remote marine research station on
+          Vancouver Island.
+        </p>
+
+        <p>
+          Responsibilities included laboratory readiness,
+          scientific equipment and infrastructure, fieldwork
+          coordination, research scheduling, operational safety,
+          and communication with research teams.
+        </p>
+
+        <p>
+          Supported marine field operations and small vessel
+          activities, helping researchers conduct their work
+          effectively in a dynamic coastal environment.
+        </p>
+
+        <span class="tag">Research Coordination</span>
+        <span class="tag">Marine Field Operations</span>
+        <span class="tag">Laboratory Support</span>
+        <span class="tag">Scientific Logistics</span>
+      </article>
+
+      <article class="card">
+        <div class="meta">Fiji · Master's Research</div>
+        <h3>Coral Thermal Tolerance Research</h3>
+        <div class="role">
+          Graduate Researcher · ZMT & Reef Explorer Fiji
+        </div>
+
+        <p>
+          Investigated thermal tolerance and bleaching
+          responses of tropical reef-building corals in Fiji,
+          with fieldwork conducted in the Votua reef area.
+        </p>
+
+        <p>
+          Conducted snorkel-based reef surveys, coral
+          identification, sample collection, and controlled
+          thermal stress experiments using CBASS.
+        </p>
+
+        <p>
+          Worked with physiological response measurements
+          and experimental data to investigate variation
+          in coral sensitivity to elevated temperatures.
+        </p>
+
+        <span class="tag">Coral Reef Ecology</span>
+        <span class="tag">CBASS</span>
+        <span class="tag">Thermal Stress</span>
+        <span class="tag">Field Sampling</span>
+      </article>
+
+      <article class="card">
+        <div class="meta">Germany · Marine Research</div>
+        <h3>Helmholtz-Zentrum Hereon</h3>
+        <div class="role">Research Assistant</div>
+
+        <p>
+          Contributed to marine ecosystem research involving
+          plankton, marine snow, scientific imaging, and
+          environmental data analysis.
+        </p>
+
+        <p>
+          Gained experience with laboratory-based marine
+          research and participated in a scientific research
+          cruise in the North Sea and Baltic Sea.
+        </p>
+
+        <span class="tag">Marine Ecology</span>
+        <span class="tag">Scientific Imaging</span>
+        <span class="tag">Data Analysis</span>
+        <span class="tag">Research Cruises</span>
+      </article>
+
+      <article class="card">
+        <div class="meta">Germany · Additional Experience</div>
+        <h3>GEOMAR & Schutzstation Wattenmeer</h3>
+        <div class="role">
+          Marine Research & Environmental Education
+        </div>
+
+        <p>
+          Gained additional experience in marine scientific
+          environments and coastal ecosystem education.
+        </p>
+
+        <p>
+          At Schutzstation Wattenmeer, contributed to
+          environmental education through guided coastal
+          excursions, educational activities, and communication
+          of marine ecological knowledge to visitors.
+        </p>
+
+        <span class="tag">Marine Science</span>
+        <span class="tag">Environmental Education</span>
+        <span class="tag">Science Communication</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-label">03 / Portfolio</div>
+    <h2>Geospatial & Research Projects</h2>
+
+    <p class="intro">
+      This portfolio brings together my marine research
+      background and ongoing development in geospatial
+      analysis. Projects will document research questions,
+      datasets, analytical workflows, limitations, and
+      reproducible outputs.
+    </p>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="meta">GIS Project 01 · In Development</div>
+        <h3>
+          Mapping Environmental Exposure of Coral Reefs
+          along Fiji's Coral Coast
+        </h3>
+
+        <p>
+          A geospatial analysis project focused on mapping
+          coral reef habitats and environmental exposure
+          in the coastal region of Votua, Fiji.
+        </p>
+
+        <p>
+          The planned workflow will explore reef habitat
+          mapping, satellite-derived environmental information,
+          and spatial patterns relevant to reef monitoring
+          and conservation planning.
+        </p>
+
+        <p>
+          Potential data sources include Allen Coral Atlas,
+          Sentinel-2 imagery, and NOAA Coral Reef Watch.
+          Data suitability and spatial resolution will be
+          evaluated before analysis.
+        </p>
+
+        <span class="tag">QGIS</span>
+        <span class="tag">Remote Sensing</span>
+        <span class="tag">Coral Reefs</span>
+        <span class="tag">In Development</span>
+      </article>
+
+      <article class="card">
+        <div class="meta">Scientific Research · Fiji</div>
+        <h3>
+          Experimental Assessment of Coral Thermal Tolerance
+        </h3>
+
+        <p>
+          Master's research investigating variation in
+          thermal tolerance among tropical coral species
+          using controlled heat-stress experiments.
+        </p>
+
+        <p>
+          The project combined field-based coral sampling,
+          CBASS experiments, physiological measurements,
+          and quantitative analysis of coral responses
+          to temperature stress.
+        </p>
+
+        <p>
+          A detailed research case study, including methods,
+          selected figures, and key findings, will be added
+          to this portfolio.
+        </p>
+
+        <span class="tag">Coral Physiology</span>
+        <span class="tag">Experimental Ecology</span>
+        <span class="tag">CBASS</span>
+        <span class="tag">Data Analysis</span>
+      </article>
+
+    </div>
+
+    <p class="note">
+      GIS projects are currently being developed. Planned
+      analyses are presented as project concepts rather
+      than completed scientific results.
+    </p>
+  </div>
+</section>
+
+<section id="expertise">
+  <div class="container">
+    <div class="section-label">04 / Capabilities</div>
+    <h2>Expertise & Technical Skills</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Marine Science</h3>
+        <p>
+          Coral reef ecology, coral thermal tolerance,
+          experimental stress assays, marine ecosystem
+          research, field sampling, and ecological data
+          interpretation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Field & Research Operations</h3>
+        <p>
+          Marine field logistics, small vessel operations,
+          research station coordination, laboratory
+          infrastructure, equipment management, and
+          scientific safety procedures.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Data & Geospatial Analysis</h3>
+        <p>
+          Environmental data analysis, scientific data
+          management, and developing skills in QGIS,
+          satellite remote sensing, marine spatial
+          analysis, and geospatial workflows.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Communication & Collaboration</h3>
+        <p>
+          International research collaboration, scientific
+          coordination, technical documentation, stakeholder
+          communication, environmental education, and
+          interdisciplinary teamwork.
+        </p>
+      </div>
+
+    </div>
+
+    <h2 style="margin-top: 55px;">Selected Certifications</h2>
+
+    <p class="intro">
+      PADI Advanced Open Water Diver (50+ logged dives),
+      Small Vessel Operator Proficiency (SVOP),
+      Small Domestic Vessel Basic Safety (SDV-BS),
+      Restricted Operator Certificate – Maritime (ROC-M),
+      First Aid & CPR-C, STCW Sea Survival,
+      and Pleasure Craft Operator Card (PCOC).
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-label">05 / Connect</div>
+    <h2>Let's Connect</h2>
+
+    <p class="intro">
+      I am interested in opportunities and collaborations
+      involving marine research, coral reef conservation,
+      environmental monitoring, scientific project
+      coordination, and geospatial analysis.
+    </p>
+
+    <p>
+      Explore my projects and code on
+      <a href="https://github.com/elisa-jahreis"
+         target="_blank"
+         rel="noopener noreferrer">GitHub</a>.
+    </p>
+
+    <p>
+      Additional contact details, professional profiles,
+      and a downloadable CV will be added here.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Elisa Jahreis · Marine Science & Geospatial Analysis
+</footer>
+
+</body>
+</html>
